@@ -1,0 +1,71 @@
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px; /* Add subtle rounded corners */
+  background-color: #f5f5f5; /* Light background for readability */
+  padding: 1rem; /* Add some padding for spacing */
+  margin-bottom: 1rem; /* Add space between comments */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.2s ease-in-out; /* Add smooth transition effects */
+}
+
+.comment-container:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  background-color: #ebeef0; /* Slightly lighten background on hover */
+}
+
+.commenter-info {
+  display: flex;
+  align-items: center; /* Align avatar and name vertically */
+  margin-bottom: 0.5rem; /* Add some space below commenter info */
+}
+
+.commenter-avatar {
+  width: 40px; /* Set a consistent avatar size */
+  height: 40px; /* Maintain aspect ratio */
+  border-radius: 50%; /* For a circular avatar */
+  object-fit: cover; /* Ensure avatar image fills the space */
+}
+
+.commenter-name {
+  font-weight: bold;
+  margin-left: 1rem; /* Add space between avatar and name */
+}
+
+.comment-text {
+  line-height: 1.5; /* Improve readability with some line spacing */
+}
+
+.timestamp {
+  font-size: 0.8rem; /* Slightly smaller font for timestamps */
+  color: #888; /* Subdued text color */
+}
+
+.textarea-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.textarea-container textarea {
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allows vertical resizing */
+}
+
+/* Optional: Add focus styles */
+.textarea-container textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Change color to your preference */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adjust shadow as needed */
+}
+.zoom-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-on-hover:hover {
+  transform: scale(1.1); /* Zoom in by 10% on hover */
+}
